@@ -67,11 +67,11 @@ document.addEventListener("DOMContentLoaded", function() {
             if (officialUrls.includes(pageUrl)) {
                 console.log("DEBUG: Official Helios URL detected.");
                 iconElement.classList.add("fa", "fa-circle-check", "sitechecker-secure");
-                messageElement.innerHTML = `This link <b>(${pageUrl})</b> is a secure, official Helios Browser link.`;
+                messageElement.innerHTML = `こちらはリミックスしたサイトです！<b>(${pageUrl})</b>公式サイトはa href="https://github.com/dinguschan-owo/Helios/blob/main/README.md" target="_blank" class="sitechecker-link">here</a>をご利用ください！`;
             } else {
                 console.log("DEBUG: UNOFFICIAL URL detected!");
                 iconElement.classList.add("fa", "fa-triangle-exclamation", "sitechecker-warning");
-                messageElement.innerHTML = `This link <b>(${pageUrl})</b> is not an official Helios Browser link. Use at your own risk, or find a list of official Helios Browser links <a href="https://github.com/dinguschan-owo/Helios/blob/main/README.md" target="_blank" class="sitechecker-link">here</a>.`;
+                messageElement.innerHTML = `こちらはリミックスしたサイトです！<b>(${pageUrl})</b>公式サイトはa href="https://github.com/dinguschan-owo/Helios/blob/main/README.md" target="_blank" class="sitechecker-link">here</a>をご利用ください！`;
             }
 
             console.log("DEBUG: Text updated inside Sitechecker box.");
